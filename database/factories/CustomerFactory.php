@@ -17,7 +17,10 @@ class CustomerFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'name' => fake()->name,
+            'address' => fake()->address,
+            'phone' => fake()->phoneNumber,
+            'balance'=> fake()->numberBetween(500,5000)
         ];
     }
 }

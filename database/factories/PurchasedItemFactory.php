@@ -17,7 +17,10 @@ class PurchasedItemFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'merchandise_id'    => fake()->numberBetween(1, 600),
+            'purchase_id'       => fake()->numberBetween(1, 100),
+            'whole_sale_qty'    => fake()->numberBetween(1,20),
+            'purchase_price'    => fake()->numberBetween(200,2000),
         ];
     }
 }

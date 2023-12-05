@@ -11,5 +11,4 @@ class Merchandise extends Model
 
     protected $guarded = [];
 
-    public function
 }

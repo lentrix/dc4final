@@ -17,7 +17,10 @@ class SoldItemFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'merchandise_id'    =>  fake()->numberBetween(1, 600),
+            'sale_id'           =>  fake()->numberBetween(1,100),
+            'qty'               =>  fake()->numberBetween(1,5),
+            'selling_price'     =>  fake()->numberBetween(5,100)
         ];
     }
 }

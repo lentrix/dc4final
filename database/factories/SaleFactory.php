@@ -17,7 +17,10 @@ class SaleFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'customer_id'   =>  fake()->numberBetween(1,50),
+            'date'          =>  fake()->dateTimeBetween('-2 years'),
+            'is_credit'     =>  fake()->boolean,
+            'user_id'       =>  1
         ];
     }
 }

@@ -17,7 +17,10 @@ class PurchaseFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'date'          =>  fake()->dateTimeBetween('-2 years'),
+            'supplier_id'   =>  fake()->numberBetween(1,10),
+            'total'         =>  0,
+            'user_id'       =>  1,
         ];
     }
 }
